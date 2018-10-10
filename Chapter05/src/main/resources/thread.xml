@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<suite name="mulit" parallel="test" thread-count="2">
+<suite name="mulit" parallel="tests" thread-count="6">
     <!--
-    test 级别：不同的test tag下的用例可以在不同的线程下执行
-              相同的test tag下的用例只能在同一个线程中去执行
+    tests 级别：不同的test tag下的用例可以在不同的线程下执行
+               相同的test tag下的用例只能在同一个线程中去执行
 
-    class
+    classes 级别：相同的class tag 下的用例在同一个线程中执行
+                不同的class tag 下的用例在不同的线程中执行
 
     methods 级别：所有用例都可以在不同的线程下去执行
 
@@ -14,17 +15,11 @@
     xml文件配置这种方式不能指定线程池，只有方法上可以指定线程池
     -->
 
-
     <test name ="mulit1">
         <classes>
             <class name="com.course.testng.multiThread.MultiThreadOnXml"/>
         </classes>
     </test>
 
-    <test name ="mulit2">
-        <classes>
-            <class name="com.course.testng.multiThread.MultiThreadOnXml"/>
-        </classes>
-    </test>
 
 </suite>

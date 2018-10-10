@@ -7,11 +7,13 @@ public class BasicAnnotation {
     @Test
     public void testCase1(){
         System.out.println("testcase1");
+        System.out.printf("Baisc test1 Thread Id : %s%n",Thread.currentThread().getId());
     }
 
     @Test(enabled = true)
     public void testCase2(){
         System.out.println("testcase2");
+        System.out.printf("Baisc test2 Thread Id : %s%n",Thread.currentThread().getId());
     }
 
     @Test(enabled = false)

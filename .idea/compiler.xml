@@ -7,10 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Chapter05" />
+        <module name="Chapter06" />
+        <module name="Chapter09" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="autotest" target="1.5" />
       <module name="Chapter05" target="1.5" />
+      <module name="Chapter06" target="6" />
+      <module name="Chapter07" target="1.5" />
+      <module name="Chapter09" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
