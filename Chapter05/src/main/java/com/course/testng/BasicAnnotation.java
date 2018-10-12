@@ -10,7 +10,7 @@ public class BasicAnnotation {
         System.out.printf("Baisc test1 Thread Id : %s%n",Thread.currentThread().getId());
     }
 
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void testCase2(){
         System.out.println("testcase2");
         System.out.printf("Baisc test2 Thread Id : %s%n",Thread.currentThread().getId());
@@ -49,5 +49,15 @@ public class BasicAnnotation {
     @BeforeSuite
     public void beforeSuit(){
         System.out.println("BeforeSuite");
+    }
+
+    @BeforeTest
+    public void beforeTest(){
+        System.out.println("beforeTest");
+    }
+
+    @AfterTest
+    public void AfterTest(){
+        System.out.println("AfterTest");
     }
 }

@@ -1,16 +1,35 @@
 [
   {
+    "description":"这是一个返回cookies的get请求",
+    "request":{
+      "uri":"/getCookies",
+      "method":"get"
+    },
+    "response":{
+      "cookies":{
+        "login":"true"
+      },
+      "text":"恭喜获得Cookies信息成功",
+      "headers":{
+        "Content-Type":"text/html,charset=gbk"
+      }
+    }
+  },
+
+
+  {
     "description":"this is get with cookies",
     "request":{
       "uri":"/get/with/cookies",
       "method":"get",
       "cookies":{"login":"true"}},
       "response": {
-        "text":"这是需要携带cookies信息才能访问的get请求",
+        "text":"这是需要携带cookies信息才能访问的get请求!!",
         "headers": {
           "Content-Type":"text/html; charset=gbk"}
     }
   },
+
 
   {
     "description":"this is post with cookies",
@@ -28,8 +47,8 @@
     "response":{
       "status":200,
       "json":{
-        "case":"success",
-        "status":"1"
+        "name":"huhansan",
+        "status":"ok"
         }
       }
     }
