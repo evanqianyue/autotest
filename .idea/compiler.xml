@@ -10,15 +10,20 @@
         <module name="Chapter06" />
         <module name="Chapter09" />
         <module name="Chapter10" />
+        <module name="Chapter11" />
+        <module name="Chapter12" />
+        <module name="Chapter13" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="autotest" target="1.8" />
       <module name="Chapter05" target="1.5" />
       <module name="Chapter06" target="6" />
-      <module name="Chapter07" target="1.5" />
       <module name="Chapter09" target="1.8" />
       <module name="Chapter10" target="1.8" />
+      <module name="Chapter11" target="1.8" />
+      <module name="Chapter12" target="1.8" />
+      <module name="Chapter13" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
